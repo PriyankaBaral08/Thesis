@@ -315,7 +315,7 @@ print(f" LSTM Model Summary:")
 lstm_model.summary()
 
 # Train LSTM
-print(f"\n🎓 Training LSTM...")
+print(f"\n Training LSTM...")
 
 early_stop = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 
