@@ -70,7 +70,7 @@ print(f"   Missing values: {missing}")
 if missing > 0:
     print("     Dropping rows with missing values...")
     df = df.dropna(subset=feature_cols + ['Next_Day_Return'])
-    print(f"   ✅ Remaining rows: {len(df):,}")
+    print(f"   Remaining rows: {len(df):,}")
 
 # Prepare X and y
 X = df[feature_cols].values
@@ -448,7 +448,7 @@ ax6.set_ylabel('')
 
 plt.tight_layout()
 plt.savefig(f'{PLOTS_PREFIX}_overview.png', dpi=300, bbox_inches='tight')
-print(f"✅ Saved: {PLOTS_PREFIX}_overview.png")
+print(f" Saved: {PLOTS_PREFIX}_overview.png")
 
 # Additional plot: Prediction samples over time
 fig2, ax = plt.subplots(figsize=(16, 6))
